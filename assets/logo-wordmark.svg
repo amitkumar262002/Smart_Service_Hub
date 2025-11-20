@@ -1,0 +1,17 @@
+<svg width="320" height="56" viewBox="0 0 320 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5B8DEF"/>
+      <stop offset="100%" stop-color="#36C2CF"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect rx="10" ry="10" x="0" y="4" width="48" height="48" fill="url(#g2)"/>
+    <g transform="translate(10,14)">
+      <path d="M6 22 l8 -8 l6 6 l8 -8" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="28" cy="12" r="3" fill="#ffffff"/>
+    </g>
+    <text x="60" y="26" font-family="Inter,Segoe UI,Arial" font-size="22" font-weight="800" fill="#0F172A">Smart ServiceHub</text>
+    <text x="60" y="44" font-family="Inter,Segoe UI,Arial" font-size="12" font-weight="500" fill="#64748B">Local services marketplace</text>
+  </g>
+</svg>

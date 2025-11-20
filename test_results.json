@@ -1,0 +1,141 @@
+{
+  "passed": 21,
+  "failed": 0,
+  "tests": [
+    {
+      "test": "User1 Get Own Profile",
+      "endpoint": "/api/secure/user/profile",
+      "user": "user1@example.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "User1 Get Own Bookings",
+      "endpoint": "/api/secure/user/bookings",
+      "user": "user1@example.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "User1 Get Own Stats",
+      "endpoint": "/api/secure/user/stats",
+      "user": "user1@example.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "User1 Try Admin Access (Should Fail)",
+      "endpoint": "/api/secure/admin/all-users",
+      "user": "user1@example.com",
+      "expected": 403,
+      "actual": 403,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "User1 Try Provider Access (Should Fail)",
+      "endpoint": "/api/secure/provider/profile",
+      "user": "user1@example.com",
+      "expected": 403,
+      "actual": 403,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Provider1 Get Own Profile",
+      "endpoint": "/api/secure/provider/profile",
+      "user": "provider1@example.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Provider1 Get Own Bookings",
+      "endpoint": "/api/secure/provider/bookings",
+      "user": "provider1@example.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Provider1 Get Own Stats",
+      "endpoint": "/api/secure/provider/stats",
+      "user": "provider1@example.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Provider1 Try Admin Access (Should Fail)",
+      "endpoint": "/api/secure/admin/all-providers",
+      "user": "provider1@example.com",
+      "expected": 403,
+      "actual": 403,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Provider1 Try User Access (Should Fail)",
+      "endpoint": "/api/secure/user/profile",
+      "user": "provider1@example.com",
+      "expected": 403,
+      "actual": 403,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Owner Get All Users",
+      "endpoint": "/api/secure/admin/all-users",
+      "user": "owner@smartservicehub.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Owner Get All Providers",
+      "endpoint": "/api/secure/admin/all-providers",
+      "user": "owner@smartservicehub.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Owner Get All Bookings",
+      "endpoint": "/api/secure/admin/all-bookings",
+      "user": "owner@smartservicehub.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Owner Get All Transactions",
+      "endpoint": "/api/secure/admin/all-transactions",
+      "user": "owner@smartservicehub.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    },
+    {
+      "test": "Owner Get Dashboard",
+      "endpoint": "/api/secure/admin/dashboard",
+      "user": "owner@smartservicehub.com",
+      "expected": 200,
+      "actual": 200,
+      "passed": true,
+      "status": "\u2705 PASS"
+    }
+  ]
+}
